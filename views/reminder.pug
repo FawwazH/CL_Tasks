@@ -1,0 +1,67 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  // Use the latest (edge) version of IE rendering engine
+  meta(name='x-apple-disable-message-reformatting')
+  // Disable auto-scale in iOS 10 Mail entirely
+  title Reminder for Task
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:300,500' rel='stylesheet')
+center(style='width: 100%; background: #F1F1F1; text-align: left;')
+  div(style='display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;font-family: sans-serif;') Subject: Automated Task Reminder 
+  .email-container(style='max-width: 680px; margin: auto;')
+    table.email-container(role='presentation' cellspacing='0' cellpadding='0' border='0' align='center' width='100%' style='max-width: 680px;')
+      tr
+        td(bgcolor='#333333')
+          table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
+            tr
+              td(style='padding: 30px 40px 30px 40px; text-align: center;')
+                span(style='color:#fff; font-size: 30px') Reminder
+      tr
+        td(background='https://i.imgur.com/eZflxhL.jpg' bgcolor='#222222' align='center' valign='top' style='text-align: center; background-position: center center !important; background-size: cover !important;')
+          div
+            table(role='presentation' border='0' cellpadding='0' cellspacing='0' align='center' width='100%' style='max-width:500px; margin: auto;')
+              tr
+                td(height='20' style='font-size:20px; line-height:20px;') &nbsp;
+              tr
+                td(align='center' valign='middle')
+                  table
+                    tr
+                      td(valign='top' style='text-align: center; padding: 60px 0 10px 20px;')
+                        h1(style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 30px; line-height: 36px; color: #ffffff; font-weight: bold;") HELLO, GOOD DAY #{firstName}.
+                    tr
+                      td(valign='top' style='text-align: center; padding: 10px 20px 15px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #fff;')
+                        p(style='margin: 0;')
+                          | The item #{itemTitle} with due date #{dueDate} is pending follow up and responsibly for this
+                          | item is #{firstName}. Please follow up or update the due date in the item to stop receiving notification.&rdquo;
+                    tr
+                      td(valign='top' align='center' style='text-align: center; padding: 15px 0px 60px 0px;')
+                        center
+                          table.center-on-narrow(role='presentation' align='center' cellspacing='0' cellpadding='0' border='0' style='text-align: center;')
+                            tr
+                              td.button-td(style='border-radius: 50px; background: #26a4d3; text-align: center;')
+                                a.button-a(href='https://www.crimsonlogic.com/' style="background: #26a4d3; border: 15px solid #26a4d3; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;")
+                                  span.button-link(style='color:#ffffff;') &nbsp;&nbsp;&nbsp;&nbsp;CRIMSON LOGIC&nbsp;&nbsp;&nbsp;&nbsp;
+      tr
+        td(bgcolor='#ffffff')
+          table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
+            br
+            tr
+              td(align='center')
+                img(src='https://img.icons8.com/dusk/64/000000/ms-share-point.png' width='37' height='37' style='display: block; border: 0px;')
+            tr
+              td(align='center' style='font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; padding: 5px 0 10px 0;')
+                p(style='font-size: 14px; font-weight: 800; line-height: 18px; color: #333333;')
+                  | CrimsonLogic.com
+                  br
+                  |  #67 Corner Eighth Avenue and, Fifth Street, Trinidad &amp; Tobago
+            tr
+              td(style='padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;')
+                p(style='margin: 0;') This email was sent to you from Automated System CrimsonLogic.
+            tr
+              td(style='padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;')
+                p(style='margin: 0;')
+                  | Copyright &copy; 2021-2022 
+                  b CrimsonLogic.com
+                  | , All Rights Reserved.

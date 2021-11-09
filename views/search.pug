@@ -1,0 +1,61 @@
+doctype html
+head
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Search Tasks | CL
+
+  
+  include _header
+  +header('Search')
+
+  form(style='width: 80%; margin: 2rem auto;')
+    .form-row
+      .form-group.col-md-6
+        label(for='projectName') Project Name
+        input#projectName.form-control(type='text', placeholder='Name')
+      .form-group.col-md-6
+        label(for='itemTitle') Item Title
+        input#itemTitle.form-control(type='text', placeholder='Item Title')
+    .form-group
+      label(for='responsibleFor') Responsible for Item
+      input#responsibleFor.form-control(type='text', placeholder='Responsible For')
+    .form-group
+      label(for='dueDate') Due Date
+      input#dueDate.form-control(type='date')
+    .form-row
+      .form-group.col-md-4
+        label(for='status') Status
+        select#status.form-control
+          option(value='')
+          option(value='Open') Open
+          option(value='On Hold') On Hold
+          option(value='Completed') Completed
+          option(value='Closed') Closed
+    button#searchBtn.btn.btn-primary(type='submit') Search
+table.table(style='margin: 2rem auto;')
+  thead
+    tr
+      th(scope='col') Project Name
+      th(scope='col') Item Title
+      th(scope='col') Responsible for Item
+      th(scope='col') Created Date
+      th(scope='col') Due Date
+      th(scope='col') Status
+      th(scope='col') Update
+      
+  tbody
+    if(tasks)
+      each task, i in tasks
+        tr.helper
+          th(scope='row')= task.projectName
+          td= task.itemTitle
+          td= task.responsibleFor
+          td= task.createdDate
+          td= task.dueDate
+          td= task.status
+          td.updateTask
+            a.btn.btn-primary(href=`edit/${task.itemTitle}`)=`Update project ${task.projectName}`
+
+
+script(src='js/index.js', type='module')

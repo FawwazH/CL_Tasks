@@ -1,0 +1,119 @@
+[
+    {
+      "projectName": "Canary",
+      "itemTitle": "New nav-bar for project Canary",
+      "summary": "Developing a new navigation bar for the web application Canary",
+      "description": "Developing a new navigation bar for the web application Canary",
+      "responsibleFor": "Fawwaz",
+      "createdBy": "Joe",
+      "createdDate": "7/11/2021",
+      "dueDate": "2021-11-07",
+      "emailNotification": "fawwazhosein46@yahoo.com",
+      "status": "Open"
+    },
+    {
+      "projectName": "Mercury",
+      "itemTitle": "Re-do the footer for project Mercury",
+      "summary": "Re-do the footer for project Mercury in a responsive manner",
+      "description": "Re-do the footer for project Mercury in a responsive manner",
+      "responsibleFor": "Joe",
+      "createdBy": "Mark",
+      "createdDate": "10/11/2021",
+      "dueDate": "2021-12-03",
+      "emailNotification": "leo@example.com",
+      "status": "Open"
+      
+    },
+    {
+      "projectName": "Casanova",
+      "itemTitle": "Implementing authenication on project Casanova",
+      "summary": "Implementing authenication on project Casanova using OAuth 2.0 protocols",
+      "description": "Implementing authenication on project Casanova using OAuth 2.0 protocols",
+      "responsibleFor": "Henry",
+      "createdBy": "Mark",
+      "createdDate": "13/11/2021",
+      "dueDate": "2021-12-05",
+      "emailNotification": "laura@example.com",
+      "status": "On Hold"
+      
+    },
+    {
+      "projectName": "Stratos",
+      "itemTitle": "Partitioning data for Stratos",
+      "summary": "Partitioning data into training and validation for Stratos ML model",
+      "description": "Partitioning data into training and validation for Stratos ML model",
+      "responsibleFor": "Fawwaz",
+      "createdBy": "Henry",
+      "createdDate": "5/11/2021",
+      "dueDate": "2021-12-07",
+      "emailNotification": "fawwazhosein46@yahoo.com",
+      "status": "Completed"
+      
+    },
+    {
+      "projectName": "Project X",
+      "itemTitle": "Develop landing page for Project X",
+      "summary": "Develop responsive landing page design for Project X using Figma",
+      "description": "Develop responsive landing page design for Project X using Figma",
+      "responsibleFor": "Melly",
+      "createdBy": "Jonathon",
+      "createdDate": "4/11/2021",
+      "dueDate": "2021-12-15",
+      "emailNotification": "laura@example.com",
+      "status": "Closed"
+      
+    },
+    {
+      "projectName": "Tesla",
+      "itemTitle": "New design for Model X door",
+      "summary": "New titanium design for Model X door with carbon fiber frame",
+      "description": "New titanium design for Model X door with carbon fiber frame",
+      "responsibleFor": "James",
+      "createdBy": "Henry",
+      "createdDate": "4/11/2021",
+      "dueDate": "2021-12-16",
+      "emailNotification": "james@example.com",
+      "status": "Open"
+      
+    },
+    {
+      "projectName": "Juliet",
+      "itemTitle": "Create new endpoints for project Juliet",
+      "summary": "Create new endpoints for project Juliet for reading tasks",
+      "description": "Create new endpoints for project Juliet for reading tasks",
+      "responsibleFor": "Fawwaz",
+      "createdBy": "James",
+      "createdDate": "3/10/2021",
+      "dueDate": "2022-02-12",
+      "emailNotification": "fawwazhosein46@yahoo.com",
+      "status": "Open"
+      
+    },
+    {
+      "projectName": "Echo",
+      "itemTitle": "Train echo model",
+      "summary": "Train echo CNN model to produce higher accuracies",
+      "description": "Train echo CNN model to produce higher accuracies",
+      "responsibleFor":"James",
+      "createdBy": "Fawwaz",
+      "createdDate": "4/11/2021",
+      "dueDate": "2021-11-11",
+      "emailNotification": "james@example.com",
+      "status": "Completed"
+      
+    },
+    {
+      "projectName": "Delta",
+      "itemTitle": "Deploy LSTM Delta model",
+      "summary": "Deploy LSTM Delta model to Microsoft Azure",
+      "description": "Deploy LSTM Delta model to Microsoft Azure",
+      "responsibleFor": "Fawwaz",
+      "createdBy": "Melly",
+      "createdDate": "3/11/2021",
+      "dueDate": "2021-12-03",
+      "emailNotification": "laura@example.com",
+      "status": "On Hold"
+      
+    }
+
+]

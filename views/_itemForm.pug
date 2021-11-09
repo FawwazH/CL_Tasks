@@ -1,0 +1,83 @@
+mixin itemForm(btnId, btnText, currentPage)
+  form(style='width: 90%; margin: 2rem auto;')
+    // Project Name
+    .form-group.row
+      label.col-sm-2.col-form-label(for='projectName') Project Name
+      .col-sm-10
+        input#projectName.form-control(type='text', placeholder='Name' value= (task ? task.projectName : ''))
+    // Item Title
+    .form-group.row
+      label.col-sm-2.col-form-label(for='itemTitle') Item Title
+      .col-sm-10
+        input#itemTitle.form-control(type='text', placeholder='Title' value=(task ? task.itemTitle : ''))
+    // Summary
+    .form-group.row
+      label.col-sm-2.col-form-label(for='summary') Summary
+      .col-sm-10
+        input#summary.form-control(type='text', placeholder='Summary' value= (task ? task.summary : ''))
+    // Description
+    .form-group.row
+      label.col-sm-2.col-form-label(for='description') Description
+      .col-sm-10
+        input#description.form-control(type='text', placeholder='Description' value= (task ? task.description  : ''))
+    // Responsible for Item
+    .form-group.row
+      label.col-sm-2.col-form-label(for='responsibleFor') Responsible for item
+      .col-sm-10
+        input#responsibleFor.form-control(type='text', placeholder='Responsibility' value= (task ? task.responsibleFor  : ''))
+    // Created By
+    .form-group.row
+      label.col-sm-2.col-form-label(for='createdBy') Created By
+      .col-sm-10
+        input#createdBy.form-control(type='text', placeholder='Created By' value= (task ? task.createdBy : ''))
+    // Created Date
+    .form-group.row
+      label.col-sm-2.col-form-label(for='createdDate') Created Date
+      .col-sm-10
+        input#createdDate.form-control(type='text', value= (task ? task.createdDate : ''))
+    // Due Date
+    .form-group.row
+      label.col-sm-2.col-form-label(for='dueDate') Due Date 
+      .col-sm-10
+        input#dueDate.form-control(type='date' value= (task ? task.dueDate : ''))
+    // Email notification
+    .form-group.row
+      label.col-sm-2.col-form-label(for='emailNotification') Email(s)
+      .col-sm-10
+        input#emailNotification.form-control(type='text', placeholder='Single email only' value= (task ? task.emailNotification : ''))
+    // Status - if on edit page
+    .form-group.row
+      label.col-sm-2.col-form-label(for='status') Status
+      select#status(name='status', style='margin-left: 1rem;')
+        if task
+          - let array = ['Open', 'On Hold', 'Completed', 'Closed']
+          -const statusPosition = array.indexOf(task.status)
+          - array.splice(statusPosition, 1);
+          option= task.status
+            each val in array ? array : [] 
+              option= val
+        else
+          option(value = 'Open') Open
+          option(value = 'On Hold') On Hold  
+          option(value = 'Completed') Completed  
+          option(value = 'Closed') Closed        
+
+    div(style='display: flex; margin-top: 4rem;')
+      // Submit button
+      .form-group.row
+        a(href='')
+          .col-sm-10
+            button(id= btnId data-toggle='modal', data-target='#exampleModal').btn.btn-primary= btnText
+      // Clear button
+      if(currentPage === 'create')
+        .form-group.row(style='margin-left: .6rem;')
+          .col-sm-10
+            button#reset.btn.btn-primary(type='reset', style='padding: .4rem 1.3rem;') Reset
+
+
+
+
+
+
+    
+
