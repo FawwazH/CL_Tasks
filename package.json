@@ -4,6 +4,7 @@
   "description": "Crimson Logic Coding Challenge",
   "main": "app.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon server.js"
   },
   "author": "Fawwaz Hosein",
