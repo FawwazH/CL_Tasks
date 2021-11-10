@@ -10,6 +10,7 @@ module.exports = class Email {
     this.dueDate = user.dueDate;
     this.from = 'fawwazhosein37@gmail.com';
   }
+  
 
   newTransport() {
       // Sendgrid
